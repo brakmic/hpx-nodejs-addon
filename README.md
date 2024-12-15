@@ -921,5 +921,3 @@ The **HPX Node.js Addon** empowers developers to harness the full potential of p
 - [Internals](./docs/Internals.md)
 - [Predicates](./docs/Predicates.md)
 - [Testing](./docs/Testing.md)
-
-Feel free to explore these documents for a deeper understanding and advanced usage scenarios.
