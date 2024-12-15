@@ -187,7 +187,7 @@ Building and setting up the **HPX Node.js Addon** can be accomplished either loc
 
    Before using any addon functions, initialize HPX as shown in the [Usage Examples](#usage-examples-quick-start) section.
 
-**Note:** For detailed instructions, refer to the [Installation](./docs/Installation.md) guide.
+**Note:** For detailed instructions, refer to the [Bulding](./docs/Building.md) guide.
 
 ### Building with Docker (Recommended)
 
