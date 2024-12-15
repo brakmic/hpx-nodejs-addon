@@ -901,10 +901,6 @@ For unresolved issues, consider consulting the [Documentation](./docs/Troublesho
 
 ---
 
-**Final Notes:**
-
-The **HPX Node.js Addon** empowers developers to harness the full potential of parallel computing within Node.js applications. By integrating HPX's robust C++ runtime with JavaScript's flexibility, you can build efficient, high-performance applications tailored to complex data processing needs.
-
 **Additional Resources:**
 - [Architecture](./docs/Architecture.md)
 - [Benchmarking](./docs/Benchmarking.md)
