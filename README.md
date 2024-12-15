@@ -901,12 +901,6 @@ For unresolved issues, consider consulting the [Documentation](./docs/Troublesho
 
 ---
 
-## License
-
-This project is distributed under the MIT License. See [LICENSE](./LICENSE) for full details.
-
----
-
 **Final Notes:**
 
 The **HPX Node.js Addon** empowers developers to harness the full potential of parallel computing within Node.js applications. By integrating HPX's robust C++ runtime with JavaScript's flexibility, you can build efficient, high-performance applications tailored to complex data processing needs.
@@ -921,3 +915,7 @@ The **HPX Node.js Addon** empowers developers to harness the full potential of p
 - [Internals](./docs/Internals.md)
 - [Predicates](./docs/Predicates.md)
 - [Testing](./docs/Testing.md)
+
+## License
+
+This project is distributed under the MIT License. See [LICENSE](./LICENSE) for full details.
