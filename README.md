@@ -913,9 +913,13 @@ The **HPX Node.js Addon** empowers developers to harness the full potential of p
 
 **Additional Resources:**
 - [Architecture](./docs/Architecture.md)
-- [Advanced Topics](./docs/AdvancedTopics.md)
-- [Examples](./docs/Examples.md)
 - [Benchmarking](./docs/Benchmarking.md)
-- [Troubleshooting](./docs/Troubleshooting.md)
+- [Building](./docs/Building.md)
+- [Configuration](./docs/Configuration.md)
+- [Docker](./docs/Docker.md)
+- [Examples](./docs/Examples.md)
+- [Internals](./docs/Internals.md)
+- [Predicates](./docs/Predicates.md)
+- [Testing](./docs/Testing.md)
 
 Feel free to explore these documents for a deeper understanding and advanced usage scenarios.
