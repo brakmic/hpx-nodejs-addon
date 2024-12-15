@@ -270,18 +270,22 @@ After building the addon, whether locally or using Docker, you can utilize it in
    ```bash
    node index.mjs
    ```
+   ![hpx_app_run](./gifs/hpx_app_run.gif)
 
    Or run benchmarks:
 
    ```bash
    npm run benchmark
    ```
+   ![hpx_benchmark_run](./gifs/hpx_benchmark_run.gif)
 
 4. **Run Tests:**
 
    ```bash
    npm test
    ```
+
+   ![hpx_test_run](./gifs/hpx_test_run.gif)
 
 **Note:** Ensure that HPX is initialized and finalized correctly within your scripts, as shown in the [Usage Examples](#usage-examples-quick-start) section.
 
