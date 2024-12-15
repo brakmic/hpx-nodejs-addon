@@ -1,0 +1,25 @@
+{
+  "name": "hpx-nodejs-app",
+  "version": "1.0.0",
+  "description": "A Node.js application that uses the HPX addon for high-performance parallel operations.",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "mocha test",
+    "benchmark": "node benchmark.mjs"
+  },
+  "author": "Harris Brakmic",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "figlet": "^1.8.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2"
+  }
+}

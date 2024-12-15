@@ -1,0 +1,23 @@
+{
+  "name": "hpx-nodejs-addon",
+  "version": "0.0.1",
+  "description": "A Node.js addon that interfaces with HPX for high-performance parallel operations.",
+  "main": "build/Release/hpxaddon.node",
+  "scripts": {
+    "install": "node-gyp rebuild --verbose",
+    "build": "node-gyp rebuild --verbose",
+    "build:debug": "node-gyp rebuild --debug --verbose -- -DHPX_ADDON_DEBUG",
+    "build:release": "node-gyp rebuild --release --verbose -- -DHPX_ADDON_RELEASE",
+    "build:warnonly": "node-gyp rebuild --debug --verbose -- -DHPX_ADDON_WARN_ONLY",
+    "test": "node test.js"
+  },
+  "author": "Harris Brakmic",
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^8.2.2"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.2.0"
+  },
+  "gypfile": true
+}
