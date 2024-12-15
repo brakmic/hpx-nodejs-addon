@@ -1,3 +1,0 @@
-[submodule "addon/src/extern/json"]
-	path = addon/src/extern/json
-	url = https://github.com/nlohmann/json.git
