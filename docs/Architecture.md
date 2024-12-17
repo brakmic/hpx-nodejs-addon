@@ -33,7 +33,7 @@ The **HPX Node.js Addon** seamlessly integrates the [HPX C++ runtime system](htt
 - **Customizable Predicates & Comparators:** Define and use custom JavaScript functions for complex data processing tasks.
 - **Batch Processing:** Enhance performance by minimizing cross-boundary calls between C++ and JavaScript through batch processing strategies.
 
-For additional examples and practical demonstrations, explore the [Examples](./docs/Examples.md) section.
+For additional examples and practical demonstrations, read the [Examples](./Examples.md) doc.
 
 --
 
