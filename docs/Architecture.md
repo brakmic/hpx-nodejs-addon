@@ -33,9 +33,9 @@ The **HPX Node.js Addon** seamlessly integrates the [HPX C++ runtime system](htt
 - **Customizable Predicates & Comparators:** Define and use custom JavaScript functions for complex data processing tasks.
 - **Batch Processing:** Enhance performance by minimizing cross-boundary calls between C++ and JavaScript through batch processing strategies.
 
-For a comprehensive understanding of the addon's architecture and advanced usage scenarios, refer to the [Architecture](./docs/Architecture.md) and [Advanced Topics](./docs/AdvancedTopics.md) documents. For additional examples and practical demonstrations, explore the [Examples](./docs/Examples.md) section.
+For additional examples and practical demonstrations, explore the [Examples](./docs/Examples.md) section.
 
----
+--
 
 ## Features & Capabilities
 
@@ -134,7 +134,7 @@ For a deeper dive into each architectural component, refer to the [Architecture]
   Ensure that you have Node.js version 20 or later installed on your system.
 
 - **HPX Installed:**  
-  HPX should be installed in `/usr/local/hpx`. You can use the provided Dockerfiles for a hassle-free setup or follow the [Installation](./docs/Installation.md) guide for manual installation.
+  HPX should be installed in `/usr/local/hpx`. You can use the provided Dockerfiles for a hassle-free setup.
 
 - **C++17 Toolchain:**  
   A working C++17 compiler and related build tools are required to compile the addon.
@@ -159,8 +159,6 @@ For a deeper dive into each architectural component, refer to the [Architecture]
 3. **Initialize HPX in Your Application:**
 
    Before using any addon functions, initialize HPX as shown in the [Usage Examples](#usage-examples-quick-start).
-
-**Note:** For detailed instructions, refer to the [Installation](./docs/Installation.md) guide.
 
 ---
 
@@ -196,7 +194,7 @@ await hpxaddon.initHPX({
 - **loggingEnabled & logLevel:**  
   Control logging behavior. Enable logging and set the desired verbosity level to monitor internal operations and debug issues.
 
-For a comprehensive list and explanation of configuration options, see [Configuration](./docs/Configuration.md).
+For a comprehensive list and explanation of configuration options, see [Configuration](./Configuration.md).
 
 ---
 
@@ -235,8 +233,6 @@ const hpxaddon = require('./addons/hpxaddon.node');
 ```
 
 **Note:** Ensure that you call `finalizeHPX()` to gracefully shut down the HPX runtime when your application is terminating.
-
-For more extensive examples, including custom predicates and comparators, refer to the [Detailed Example Code](#detailed-example-code) section.
 
 ---
 
@@ -367,7 +363,7 @@ console.log(`Partial sort (first ${mid} smallest): ${Array.from(partiallySorted)
 
 **Note:** The first `mid` elements will be the smallest `mid` elements in ascending order. The remaining elements may not be fully sorted.
 
-For more advanced examples and scenarios, refer to the [Examples](./docs/Examples.md) document.
+For more advanced examples and scenarios, refer to the [Examples](./Examples.md) document.
 
 ---
 
@@ -406,4 +402,3 @@ Encountering issues is a natural part of development. Here's how to address comm
   - Ensure that predicate functions return a `Uint8Array` and comparator functions return an `Int32Array` of keys.
   - Verify that batch functions are correctly implemented to avoid mismatched array lengths or types.
 
-For unresolved issues, consider consulting the [Troubleshooting Docs](./docs/Troubleshooting.md).
