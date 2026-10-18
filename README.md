@@ -1,5 +1,7 @@
 # HPX Node.js Addon
 
+![CI](https://github.com/brakmic/hpx-nodejs-addon/actions/workflows/ci.yml/badge.svg)
+
 **Table of Contents**  
 - [HPX Node.js Addon](#hpx-nodejs-addon)
   - [Introduction](#introduction)
@@ -137,8 +139,8 @@ Building and setting up the **HPX Node.js Addon** can be accomplished either loc
 
 **Prerequisites:**
 
-- **Node.js v20 or Newer:**  
-  Ensure that you have Node.js version 20 or later installed on your system.
+- **Node.js v22 or Newer:**  
+  Ensure that you have Node.js version 22 or later installed on your system.
 
 - **HPX Installed:**  
   HPX should be installed in `/usr/local/hpx`. You can follow the [HPX Installation Guide](https://hpx-docs.stellar-group.org/latest/html/index.html#installation) for manual installation.
@@ -195,21 +197,16 @@ Using Docker simplifies the setup process by encapsulating all dependencies and 
    cd hpx-nodejs-addon
    ```
 
-2. **Build the Addon Docker Image:**
+2. **Build the Application Image:**
 
    ```bash
-   docker build -t brakmic/hpx-nodejs-addon-builder:v0.1 -f addon.Dockerfile .
+   docker build -t brakmic/hpx-nodejs-app:latest .
    ```
 
-   This command builds the addon using the `addon.Dockerfile`, resulting in a Docker image tagged as `brakmic/hpx-nodejs-addon-builder:v0.1` that contains the compiled `hpxaddon.node` binary.
-
-3. **Build the Application Docker Image:**
-
-   ```bash
-   docker build -t brakmic/hpx-nodejs-app:latest -f app.Dockerfile .
-   ```
-
-   This builds the application image tagged as `brakmic/hpx-nodejs-app:latest`, which includes scripts for running the application (`index.mjs`), benchmarking (`benchmark.mjs`), and tests.
+   The multi-stage `Dockerfile` builds the addon against
+   `brakmic/hpx-builder:1.11.0` with Node.js 22, then produces a runtime image on
+   the same Ubuntu and HPX version. The runtime image contains the application
+   (`index.mjs`), the benchmark (`benchmark.mjs`), and the tests.
 
 ---
 

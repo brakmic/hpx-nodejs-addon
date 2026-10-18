@@ -6,6 +6,7 @@
 #include <memory>
 #include <algorithm>
 #include <cstring>
+#include <stdexcept>
 
 /**
  * @brief Converts a given string to uppercase characters.
